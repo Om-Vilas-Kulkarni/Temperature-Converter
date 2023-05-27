@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.blue{
+    background-color: rgb(53, 53, 253);
+    height:40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.subheading{
+    text-align: center;
+    margin-top:20px;
+}
+.image{
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+.heading h1{
+    font-size: 2.8rem;
+    margin-left:15px;
+}
+figure{
+    text-align: center;
+}
+figcaption{
+    text-align:center;
+}
+
+
+
+
+.converterform{
+    background-color: white;
+    border-radius: 12px;
+    padding:15px;
+    box-shadow: 1px 1px 2px 1px rgb(97, 94, 94);
+    margin-left:30px;
+}
+#sbtn{
+    color:white;
+    background-color: rgb(81 81 255);
+    border:none;
+    border-radius:5px;
+    padding:6px;
+    font-size: 1.2rem;
+    margin-top:25px;
+    cursor: pointer;
+}
+#sbtn:hover{
+    background-color: rgb(61, 61, 212);  
+}
+#sbtn:active{
+    background-color: rgb(61, 61, 212);  
+}
+label,input{
+    margin:12px;
+}
+.vform{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin-bottom: 40px;
+}
+.vform div,.results{
+    margin:15px;
+}
+#degrees{
+    height:25px;
+    margin-top:0;
+}
+#type{
+    margin-left:10px;
+    height:30px;
+    margin-top:0;
+}
+.labcolor{
+    color:rgb(117, 115, 115);
+}
+label{
+    font-size: 1.2rem;
+}
+input{
+    margin-top:0;
+}
+.results input{
+    font-size:1.1rem;
+    font-weight: bold;
+    border:none;
+    outline: none;
+    user-select: none;
+}
+
+@media (max-width:786px){
+    .image img{
+        width:70%;
+    }
+}
+@media (max-width:550px){
+    .converterform{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin:20px;
+    }
+    .vform{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

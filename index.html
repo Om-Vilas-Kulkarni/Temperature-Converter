@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="img/png/gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="blue">
+
+    </div>
+    <div class="heading">
+        <div class="subheading">
+            <h1>Temperature Converter</h1>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="image">
+            <img src="https://webstockreview.net/images/thermometer-clip-art-animated-14.png">
+        </div>
+
+        <div class="converterform">
+            <form onsubmit="convert()">
+            <div class="vform">
+                <div>
+                    <label for="temperature" class="labcolor">Degrees:</label><br>
+                    <input type="number" id="degrees" placeholder="0" required>
+                </div>
+                <div>
+                    <label for="temperature"  class="labcolor">Type:</label><br>
+                    <select name="Select" id="type" required>
+                        <option value="Celcius">Celcius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" id="sbtn" value="Convert"><br>
+                </div>
+            </div>
+        </form>
+            <div class="results">
+            <label for="weight" class="labcolor">Results:</label><br>
+            <input type="text" id="temp1" readonly ><br>
+            <input type="text" id="temp2" readonly >
+            </div>
+        
+
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
